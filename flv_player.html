@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>FLV Player</title>
+  <script src="https://cdn.jsdelivr.net/npm/flv.js@latest/dist/flv.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      overflow: hidden;
+      /* no scrollbars */
+    }
+
+    video {
+      max-width: 100vw;
+      max-height: 100vh;
+      object-fit: contain;
+      /* maintain aspect ratio */
+    }
+  </style>
+</head>
+
+<body>
+  <video id="videoElement"></video>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var videoElement = document.getElementById('videoElement');
+
+      // Get the video URL from the query parameters
+      var urlParams = new URLSearchParams(window.location.search);
+      var flvUrl = urlParams.get('url');
+
+      // If URL is not provided, fallback to a default value
+      if (!flvUrl) {
+        flvUrl = 'https://arpstudio-streamout.qa.solaireonlinecasino.com/live/ZENFALL.flv';
+      }
+
+      var flvPlayer = flvjs.createPlayer({
+        type: 'flv',
+        url: flvUrl
+      });
+      flvPlayer.attachMediaElement(videoElement);
+      flvPlayer.load();
+      flvPlayer.play();
+
+      resize(); // Initial resize to set the video size
+    });
+
+    window.addEventListener('resize', resize, false);
+
+    function resize() {
+      var videoElement = document.getElementById('videoElement');
+      var videoRatio = videoElement.videoHeight / videoElement.videoWidth;
+      var windowRatio = window.innerHeight / window.innerWidth;
+
+      if (windowRatio < videoRatio) {
+        videoElement.style.width = 'auto';
+        videoElement.style.height = '100%';
+      } else {
+        videoElement.style.width = '100%';
+        videoElement.style.height = 'auto';
+      }
+    }
+  </script>
+</body>
+
+</html>
