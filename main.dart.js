@@ -36874,7 +36874,7 @@ $S:0}
 A.amF.prototype={
 $1(a){var s,r=document.createElement("iframe")
 r.id="flv-player"
-r.src="../web/flv_player.html?url="
+r.src="../web/flv_player.html?url=https://arpstudio-streamout.qa.solaireonlinecasino.com/live/ZENFALL.flv"
 s=r.style
 s.border="none"
 s=r.style
