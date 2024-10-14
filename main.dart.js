@@ -37450,7 +37450,7 @@ a6H(){var s=this.d,r=B.b.gar(s.f).at
 r.toString
 s.hy(r+100,B.aA,B.bn)},
 I(a){var s=this,r=null,q=550*B.c.c1(A.b1(a,r,t.w).w.a.a/600,0.6,1),p=t.p
-return A.bN(B.eI,A.a([A.bQ(u.n,B.bl,75,q),A.br(A.a([A.avW(new A.bw("assets/lobby_navigation_bar/previous_arrow.png",25,60,r),"Previous button clicked",s.ga6E(s)),A.aJ(r,r,12),new A.dm(new A.a2(0,q-50,0,1/0),new A.aV(new A.a9(0,0,0,25),new A.L5(B.aV,s.d,A.awZ(a,55,130,12),r),r),r),A.aJ(r,r,12),A.avW(new A.bw("assets/lobby_navigation_bar/next_arrow.png",25,60,r),"Next button clicked",s.ga6G())],p),B.W,B.o)],p),B.r,B.E)}}
+return A.bN(B.eI,A.a([A.bQ(u.n,B.bl,75,q),A.br(A.a([A.avW(new A.bw("assets/lobby_navigation_bar/previous_arrow.png",25,60,r),"Previous button clicked",s.ga6E(s)),A.aJ(r,r,8),new A.dm(new A.a2(0,q-50,0,1/0),new A.aV(new A.a9(0,0,0,25),new A.L5(B.aV,s.d,A.awZ(a,65,130,8),r),r),r),A.aJ(r,r,8),A.avW(new A.bw("assets/lobby_navigation_bar/next_arrow.png",25,60,r),"Next button clicked",s.ga6G())],p),B.W,B.o)],p),B.r,B.E)}}
 A.alc.prototype={
 $0(){},
 $S:0}
