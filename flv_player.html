@@ -33,21 +33,24 @@
       var videoElement = document.getElementById('videoElement');
 
       // Get the video URL from the query parameters
-      var urlParams = new URLSearchParams(window.location.search);
-      var flvUrl = urlParams.get('url');
+      var flvUrl = localStorage.getItem('videoUrl');
 
       // If URL is not provided, fallback to a default value
       if (!flvUrl) {
         flvUrl = 'https://arpstudio-streamout.qa.solaireonlinecasino.com/live/ZENFALL.flv';
       }
 
-      var flvPlayer = flvjs.createPlayer({
-        type: 'flv',
-        url: flvUrl
-      });
-      flvPlayer.attachMediaElement(videoElement);
-      flvPlayer.load();
-      flvPlayer.play();
+      if (flvjs.isSupported()) {
+        var flvPlayer = flvjs.createPlayer({
+          type: 'flv',
+          url: flvUrl
+        });
+        flvPlayer.attachMediaElement(videoElement);
+        flvPlayer.load();
+        flvPlayer.play();
+      } else {
+        console.error('FLV.js is not supported in this browser.');
+      }
 
       resize(); // Initial resize to set the video size
     });
