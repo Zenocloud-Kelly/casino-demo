@@ -37643,7 +37643,7 @@ return A.b6(B.bO,new A.HU(r,s),B.k,B.t,B.z2,s,s,s,s,s)}}
 A.adf.prototype={
 $1(a){var s,r=document.createElement("iframe")
 r.id="flv-player"
-r.src="../web/flv_player.html"
+r.src="/web/flv_player.html"
 s=r.style
 s.border="none"
 s=r.style
