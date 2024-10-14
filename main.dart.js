@@ -7032,7 +7032,7 @@ WM:function WM(){},
 WN:function WN(){},
 WL:function WL(){},
 q_:function q_(a){this.a=a},
-WJ:function WJ(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3){var _=this
+WJ:function WJ(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4){var _=this
 _.a=a
 _.b=b
 _.c=c
@@ -7055,7 +7055,8 @@ _.cx=s
 _.cy=a0
 _.db=a1
 _.dx=a2
-_.dy=a3},
+_.dy=a3
+_.fr=a4},
 q0:function q0(a){this.a=a},
 WK:function WK(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){var _=this
 _.a=a
@@ -36914,7 +36915,7 @@ $S:118}
 A.q_.prototype={
 I(a){var s,r=null,q=A.b1(a,r,t.w).w.a.a,p=B.c.c1(q/1500,0.4,1),o=1500*p,n=240*p,m=q>1400?(q-1400)/2:0,l=t.TF,k=A.dU(a,!0,l).d,j=A.dU(a,!0,l).e,i=A.dU(a,!0,l).f,h=A.dU(a,!0,l).r,g=A.dU(a,!0,l).w,f=A.dU(a,!0,l).x,e=["assets/temp_buttons/player_hover.png","assets/temp_buttons/banker_hover.png","assets/temp_buttons/lucky_hover.png","assets/temp_buttons/tie_hover.png",u.m,u.i,u.H,u.M,"assets/game_navigation_bar/wifi_bad.png","assets/game_navigation_bar/wifi_ok.png","assets/game_navigation_bar/wifi_good.png"]
 for(s=0;s<11;++s)A.axl(new A.l8(e[s],r,r),a)
-return A.hp(r,new A.WJ(u.u,m,o,n,n*0.7,o*0.23,22*p,o*0.4,3*p,10*p,k,j,i,h,g,f,n*0.3,580*p,70*p,65,115,540*p,100*p))}}
+return A.hp(r,new A.WJ(u.u,m,o,n,n*0.7,o*0.23,22*p,o*0.4,3*p,10*p,k,j,i,h,g,f,n*0.3,580*p,70*p,65*p,115*p,540*p,100*p,80*p))}}
 A.WJ.prototype={
 $2(a,b){var s,r,q,p,o,n,m,l,k=this,j=null,i=A.b6(j,j,B.k,B.m,j,j,j,j,j,j),h=k.b,g=A.cp(j,B.cK,j,j,j,h,0,j),f=t.p,e=A.bo(A.a([A.bP("assets/lobby_navigation_bar/logo.png",B.Y,100,100)],f),B.o,B.p),d=A.aJ(j,15,j),c=A.ey(20)
 h=A.cp(j,A.k1(new A.aS(B.Cn,A.c8(A.a([e,d,A.b6(j,A.bo(A.a([A.bQ(B.a9,A.a([A.bP("assets/game_page/user_info.png",B.Y,153,240),A.c8(A.a([A.aJ(j,15,j),new A.aS(new A.a8(45,0,0,0),A.ck("username_here",j,j,j,j,A.cF(j,j,B.i,j,j,j,j,j,j,j,j,15,j,j,j,j,j,!0,j,j,j,j,j,j,j,j),B.aK,j),j),A.aJ(j,15,j),new A.aS(new A.a8(45,0,0,0),A.ck("credit_here",j,j,j,j,A.cF(j,j,B.i,j,j,j,j,j,j,j,j,15,j,j,j,j,j,!0,j,j,j,j,j,j,j,j),B.aK,j),j),A.aJ(j,15,j),new A.aS(new A.a8(45,0,0,0),A.ck("bet_amount_here",j,j,j,j,A.cF(j,j,B.i,j,j,j,j,j,j,j,j,15,j,j,j,j,j,!0,j,j,j,j,j,j,j,j),B.aK,j),j),A.aJ(j,15,j),new A.aS(new A.a8(45,0,0,0),A.ck("win_count_here",j,j,j,j,A.cF(j,j,B.i,j,j,j,j,j,j,j,j,15,j,j,j,j,j,!0,j,j,j,j,j,j,j,j),B.aK,j),j)],f),B.bm,B.o,B.p)],f),B.r,B.E)],f),B.o,B.a6),B.k,j,j,new A.c7(B.t,j,j,c,j,j,B.a2),j,j,B.ci,j)],f),B.bm,B.o,B.a6),j),!0,j),j,j,h,j,0,j)
@@ -36929,7 +36930,7 @@ o=k.y
 n=k.cy
 m=k.db
 l=o/1.8
-return A.eI(j,A.bQ(B.a9,A.a([i,new A.fY(k.a,j),g,h,A.cp(0,A.b6(j,A.c8(A.a([A.bo(A.a([A.b6(j,A.l6(A.l1(6,15,r,1)),B.k,B.i,j,j,e,j,j,s),A.aJ(A.awA(q,e),e,q),A.aJ(A.b6(B.J,A.bo(A.a([A.aJ(j,j,p),A.c8(A.a([A.l6(A.l1(6,23,r,0.5)),A.l6(A.l1(3,23,r,0.5)),A.bo(A.a([A.l6(A.l1(3,11,r,0.5)),A.l6(A.l1(3,12,r,0.5))],f),B.o,B.p)],f),B.F,B.a0,B.p),A.bo(A.a([A.aJ(j,j,p*3),A.ax2(r/2,o),A.aJ(j,j,p*2),A.awB(r*0.9,o,k.z,k.Q,k.as,k.at,k.ax,k.ay)],f),B.a0,B.p)],f),B.o,B.p),B.k,B.i,j,j,j,j,j,j),e,s)],f),B.a0,B.p),A.bo(A.a([A.b6(B.J,A.aJ(j,k.ch,d),B.k,B.eU,j,j,j,j,j,j)],f),B.a0,B.p)],f),B.F,B.o,B.p),B.k,c,new A.a2(0,d,0,k.d),j,j,j,j,j),j,j,0,0,j,j),A.cp(0,A.awV(a,k.CW,k.cx,o),j,j,o,j,j,j),A.cp(0,A.b6(j,A.bo(A.a([A.bT(new A.bw("assets/game_page/cancel.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/void.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/rebet.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/double.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/chip_set.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bP("assets/game_page/status_default.png",B.Y,m/2,n*2)],f),B.o,B.p),B.k,B.eU,j,j,j,j,new A.a8(l,l,l,l),j),j,j,j,o,j,j),A.cp(0,A.awD(k.dx,k.dy,80),j,j,0,0,j,j)],f),B.r,B.E))},
+return A.eI(j,A.bQ(B.a9,A.a([i,new A.fY(k.a,j),g,h,A.cp(0,A.b6(j,A.c8(A.a([A.bo(A.a([A.b6(j,A.l6(A.l1(6,15,r,1)),B.k,B.i,j,j,e,j,j,s),A.aJ(A.awA(q,e),e,q),A.aJ(A.b6(B.J,A.bo(A.a([A.aJ(j,j,p),A.c8(A.a([A.l6(A.l1(6,23,r,0.5)),A.l6(A.l1(3,23,r,0.5)),A.bo(A.a([A.l6(A.l1(3,11,r,0.5)),A.l6(A.l1(3,12,r,0.5))],f),B.o,B.p)],f),B.F,B.a0,B.p),A.bo(A.a([A.aJ(j,j,p*3),A.ax2(r/2,o),A.aJ(j,j,p*2),A.awB(r*0.9,o,k.z,k.Q,k.as,k.at,k.ax,k.ay)],f),B.a0,B.p)],f),B.o,B.p),B.k,B.i,j,j,j,j,j,j),e,s)],f),B.a0,B.p),A.bo(A.a([A.b6(B.J,A.aJ(j,k.ch,d),B.k,B.eU,j,j,j,j,j,j)],f),B.a0,B.p)],f),B.F,B.o,B.p),B.k,c,new A.a2(0,d,0,k.d),j,j,j,j,j),j,j,0,0,j,j),A.cp(0,A.awV(a,k.CW,k.cx,o),j,j,o,j,j,j),A.cp(0,A.b6(j,A.bo(A.a([A.bT(new A.bw("assets/game_page/cancel.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/void.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/rebet.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/double.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bT(new A.bw("assets/game_page/chip_set.png",n,m,j),B.I,j,j,j,j),A.aJ(j,j,o),A.bP("assets/game_page/status_default.png",B.Y,m/2,n*2)],f),B.o,B.p),B.k,B.eU,j,j,j,j,new A.a8(l,l,l,l),j),j,j,j,o,j,j),A.cp(0,A.awD(k.dx,k.dy,k.fr),j,j,0,0,j,j)],f),B.r,B.E))},
 $S:21}
 A.q0.prototype={
 I(a){var s,r=null,q=A.b1(a,r,t.w).w.a.a,p=B.c.c1(q/400,0.8,1),o=q*p,n=o*0.9,m=o/6,l=t.TF,k=A.dU(a,!0,l).d,j=A.dU(a,!0,l).e,i=A.dU(a,!0,l).f,h=A.dU(a,!0,l).r,g=A.dU(a,!0,l).w,f=A.dU(a,!0,l).x,e=["assets/temp_buttons/player_hover.png","assets/temp_buttons/banker_hover.png","assets/temp_buttons/lucky_hover.png","assets/temp_buttons/tie_hover.png",u.m,u.i,u.H,u.M,u.z,u.D,u.A]
