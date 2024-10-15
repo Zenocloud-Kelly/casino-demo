@@ -40,6 +40,10 @@
         hlsUrl = 'https://arpstudio-streamout.qa.solaireonlinecasino.com/live/ZENFALL.m3u8';
       }
 
+      function isIOS() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      }
+
       if (!isIOS()) { // don't use hls.js on iOS
         if (Hls.isSupported()) {
           var hls = new Hls();
