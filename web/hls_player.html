@@ -20,8 +20,7 @@
     video {
       max-width: 100vw;
       max-height: 100vh;
-      object-fit: contain;
-      /* maintain aspect ratio */
+      object-fit: contain; /* maintain aspect ratio */
     }
   </style>
 </head>
@@ -31,6 +30,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var videoElement = document.getElementById('videoElement');
+      videoElement.controls = false;
 
       // Get the video URL from the query parameters or localStorage
       var hlsUrl = localStorage.getItem('videoUrl');
