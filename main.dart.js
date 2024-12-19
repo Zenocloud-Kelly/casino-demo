@@ -37841,7 +37841,7 @@ return A.b3(B.bB,A.at_(r),B.k,B.t,B.kE,s,s,s,s,s)}}
 A.adB.prototype={
 $1(a){var s,r=document.createElement("iframe")
 r.id="hls-player"
-r.src="/web/hls_player.html"
+r.src="/casino-demo/web/hls_player.html"
 s=r.style
 s.border="none"
 s=r.style
