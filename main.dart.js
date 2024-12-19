@@ -37861,14 +37861,13 @@ gKJ(){$===$&&A.b()
 return $},
 gZi(){$===$&&A.b()
 return $},
-aay(){var s,r,q,p=this
+aay(){var s,r,q,p=this,o="ws://test-kelly.zenocloud.tech/websocket"
 try{if(p.x==="https:")if(p.gnw().q(0,":"))A.hF("wss://"+A.k(p.gnw())+"/websocket")
 else A.hF("wss://"+A.k(p.gnw())+":"+A.k(p.gKJ())+"/websocket")
 else if(p.gnw().q(0,":"))A.hF("ws://"+A.k(p.gnw())+"/websocket")
 else A.hF("ws://"+A.k(p.gnw())+":"+A.k(p.gKJ())+"/websocket")
-r=p.w
-r===$&&A.b()
-p.c=A.aHa(r)
+p.w=o
+p.c=A.aHa(o)
 A.hF("Connected to WebSocket server: "+p.w)
 r=p.c
 r.toString
