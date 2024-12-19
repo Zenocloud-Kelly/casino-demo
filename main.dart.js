@@ -37857,7 +37857,7 @@ $S:125}
 A.a6l.prototype={
 gZg(){$===$&&A.b()
 return $},
-aaw(){var s,r,q,p=this,o="ws://test-kelly.zenocloud.tech/websocket"
+aaw(){var s,r,q,p=this,o="wss://test-kelly.zenocloud.tech/websocket"
 try{p.w=o
 p.c=A.aHa(o)
 A.nb("Connected to WebSocket server: "+p.w)
